@@ -1,0 +1,41 @@
+<h1>Url Rewriting</h1>
+<hr>
+<hr>
+<form action="Servlet4" method="get"> 
+	Paramter1:<input type="text" name="param1"></br>
+	Paramter2:<input type="text" name="param2"></br>
+	<input type="submit" value="submit">	
+</form>
+
+<!-- 
+
+method = get/post
+
+if the method type "get" then we will get the queryString like below  
+http://localhost:7070/Session_Management/Servlet4?param1=amit&param2=kumar
+data is traveling in the url of the browser.
+
+After the question mark (?) whatever there that comes under queryString
+
+How to get queryString?
+String s = request.getQueryString();
+
+
+and if method type "post" then no queryString is generated only url patter value
+http://localhost:7070/Session_Management/Servlet4
+
+in Servlet4
+-----------
+WE ARE WRITTENT THE URL LIKE BELOW IN THE form action.
+http://localhost:7070/Session_Management/Servlet5?param1=s1&param2=s2
+after submitting s1 and s2 getting the values it looks like below
+
+http://localhost:7070/Session_Management/Servlet5?param1=amit&param2=kumar
+
+Again after submitting the form again url is rewrited by the server
+
+and above url is rewrited like below
+
+http://localhost:7070/Session_Management/Servlet5?param3=ranchi&param4=khushboo
+
+ -->
